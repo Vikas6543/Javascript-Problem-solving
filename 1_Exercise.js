@@ -1,4 +1,4 @@
-// Reverse a string
+// 1)Reverse a string
 ('First solution');
 function reverse(str) {
   const splited = str.split('');
@@ -18,9 +18,7 @@ function withoutReverse(str) {
 console.log(reverse('Vikas'));
 console.log(withoutReverse('Gndec'));
 
-
-// ***********************************************************
-// Searching an element
+// 2)Searching an element
 function search(arr, item) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === item) return i;
@@ -28,36 +26,30 @@ function search(arr, item) {
 }
 console.log(search([1, 2, 3, 4, 5], 2));
 
-
-// ***********************************************************
-// Factorial
+// 3)Factorial
 function fac(num) {
-  result = 1
-  for(let i=1; i <= num; i++) {
-    result *= i
+  result = 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
   }
-  return result
+  return result;
 }
 console.log(fac(5));
 
-
-// *********************************************************
-// Length of a longest word
+// 4)Length of a longest word
 function longestWord(str) {
   const split = str.split(' ');
   longest = '';
   for (const word of split) {
-    if(word.length > longest.length) {
-       longest = word
+    if (word.length > longest.length) {
+      longest = word;
     }
   }
-  return longest.length
+  return longest.length;
 }
 console.log(longestWord('hi im vikas shambhu'));
 
-
-// *********************************************************
-// Palindrome
+// 5)Palindrome
 function palindrome(str) {
   const reverse = str.split('').reverse().join('');
   if (reverse === str) return true;
@@ -65,9 +57,7 @@ function palindrome(str) {
 }
 console.log(palindrome('racecar'));
 
-
-// ******************************************************************
-// Finding big number in 2D-Array
+// 6)Finding big number in 2D-Array
 function largest(arr) {
   var result = [];
   for (var i = 0; i < arr.length; i++) {
@@ -80,7 +70,7 @@ function largest(arr) {
     }
     result.push(maxi);
   }
-  return result
+  return result;
 }
 console.log(
   largest([
@@ -90,9 +80,7 @@ console.log(
   ])
 );
 
-
-// ************************************************************
-// First Character to Upper Case
+// 7)First Character to Upper Case
 function titleCase(str) {
   const res = str
     .toLowerCase()
@@ -104,9 +92,7 @@ function titleCase(str) {
 }
 console.log(titleCase('im a vikas from india'));
 
-
-// ************************************************
-// to find senior or junior
+// 8)to find senior or junior
 ('first solution');
 const open = (data) => {
   return data.map((item) => {
@@ -129,17 +115,10 @@ console.log(
   ])
 );
 
-
-// **************************************************
-// get the smallest two numbers & add those two numbers
+// 9)get the smallest two numbers & add those two numbers
 function sorted(numbers) {
   const sortedNum = numbers.sort((a, b) => a - b);
   const [firstNum, secondNum] = sortedNum;
   return firstNum + secondNum;
 }
 console.log(sorted([10, 30, 50, 90]));
-
-
-
-
-
