@@ -22,7 +22,7 @@ chars.forEach((item) => {
     uniqueChars.push(item);
   }
 });
-
+ 
 console.log(uniqueChars); // ['A', 'B', 'C']
 
 
