@@ -89,7 +89,7 @@ function titleCase(str) {
       return item[0].toUpperCase() + item.slice(1);
     });
   return res.join(' ');
-}
+} 
 console.log(titleCase('im a vikas from india'));
 
 // 8)to find senior or junior
