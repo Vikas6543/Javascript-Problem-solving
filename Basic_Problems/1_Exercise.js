@@ -18,6 +18,7 @@ function withoutReverse(str) {
 console.log(reverse('Vikas'));
 console.log(withoutReverse('Gndec'));
 
+
 // 2)Searching an element
 function search(arr, item) {
   for (let i = 0; i < arr.length; i++) {

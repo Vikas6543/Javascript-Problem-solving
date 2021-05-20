@@ -17,10 +17,32 @@ const unique = (str) => {
 };
 console.log(unique('vvvikkaaas'));
 
-// 4)find not repeated string
+// 4)find character which is not repeated
 const strNotRepeated = (str) => {
   return str.split('').filter((item, index, arr) => {
     return arr.filter((arrItem) => arrItem === item).length === 1;
   });
 };
 console.log(strNotRepeated('vvvikkaaas'));
+
+
+// 5) to find Most used character in string
+const countingChars = (str) => {
+  const charCount = {}; //Step 0
+  let maxCharCount = 0;
+  let maxChar = '';
+  for(let i = 0; i < str.length; i++) { // Step 1.
+      charCount[str[i]] = ++charCount[str[i]] || 1;
+  }
+
+  for(let key in charCount) { //Step 2
+      if(charCount[key] >= maxCharCount) {
+          maxCharCount = charCount[key] //Step 3
+          maxChar = key;
+      }
+  }
+
+  return maxChar; //Step 4
+}
+
+console.log(countingChars('apple'));
